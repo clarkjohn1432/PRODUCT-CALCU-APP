@@ -1,19 +1,22 @@
-﻿
-class Product
+
+internal class Product
 {
+    private int price;
+    private string productName;
 
-    private decimal price;
-
-    public Product(decimal price)
+    public Product(string productName, int price)
     {
         this.price = price;
+        this.productName = productName;
     }
 
-    public decimal getPrice() 
-    { 
-        return this.price; 
+    public int getPrice()
+    {
+        return this.price;
     }
 
-
-
+    public string getProductName()
+    {
+        return this.productName;
+    }
 }
